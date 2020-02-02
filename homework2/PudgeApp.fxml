@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="homework2.Controller">
+   <children>
+      <ImageView fx:id="image" fitHeight="217.0" fitWidth="307.0" layoutX="29.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/Pudge_icon.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="save" layoutX="137.0" layoutY="353.0" mnemonicParsing="false" onAction="#savePhrases" text="SAVE" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="load" layoutX="390.0" layoutY="353.0" mnemonicParsing="false" onAction="#loadPhrases" text="LOAD">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="phraseFirst" layoutX="347.0" layoutY="101.0" prefHeight="36.0" prefWidth="223.0" />
+      <Label fx:id="phraseSecond" layoutX="347.0" layoutY="153.0" prefHeight="36.0" prefWidth="223.0" />
+      <Label fx:id="phraseThird" layoutX="347.0" layoutY="212.0" prefHeight="36.0" prefWidth="223.0" />
+      <RadioButton fx:id="English" layoutX="385.0" layoutY="42.0" mnemonicParsing="false" onAction="#showEngVersion" text="EN" />
+      <RadioButton fx:id="Ukrainian" layoutX="461.0" layoutY="42.0" mnemonicParsing="false" onAction="#showNenkyVersion" text="UKR" />
+      <RadioButton fx:id="French" layoutX="548.0" layoutY="42.0" mnemonicParsing="false" onAction="#showFraVersion" text="FR" />
+   </children>
+</AnchorPane>
