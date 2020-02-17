@@ -4,6 +4,7 @@ public class Cashier {
 
 	volatile boolean switchBool = false;
 	
+	
 	int rand;
 
 }
